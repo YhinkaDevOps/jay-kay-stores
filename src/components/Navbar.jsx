@@ -15,10 +15,18 @@ const Navbar = () => {
       <div className="mx-auto py-4 px-2  md:pt-2">
         <div className="flex justify-between items-end">
           <Link href="/">
-            <button className="hover:opacity-70 flex items-center flex-shrink-0">
+            <button className="hidden md:flex hover:opacity-70  items-center flex-shrink-0">
               <Image
-                src="/assets/atoba-farms-logo.png"
-                width={100}
+                src="/assets/jay-kay-logo.png"
+                width={80}
+                height={65}
+                alt="header-logo"
+              />
+            </button>
+            <button className=" md:hidden hover:opacity-70  items-center flex-shrink-0">
+              <Image
+                src="/assets/jay-kay-logo.png"
+                width={70}
                 height={65}
                 alt="header-logo"
               />
