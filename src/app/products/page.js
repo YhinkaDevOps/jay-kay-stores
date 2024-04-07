@@ -8,8 +8,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import goat from "../../../public/assets/goat.jpeg";
-import Image from "next/image";
 
 import Link from "next/link";
 

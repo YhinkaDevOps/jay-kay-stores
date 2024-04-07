@@ -14,9 +14,8 @@ const MissionStatement = () => {
             Mission Statement
           </h1>
           <p className="text-center text-base md:text-sm">
-            To cultivate sustainable agriculture practices, deliver
-            premium-quality products, and foster community well-being through
-            ethical farming, expert management, and superior customer service.
+            Our mission at Jay & Kay Stores is to lead the way in food and
+            grocery distribution, striving for excellence every step of the way.
           </p>
         </div>
         <div className="bg-[#f8f8f8] p-10 flex flex-col gap-6 shadow-md relative">
@@ -27,10 +26,11 @@ const MissionStatement = () => {
             Vision Statement
           </h1>
           <p className="text-center text-base md:text-sm">
-            To be a leading agro-farm renowned for excellence in animal and crop
-            production, farm management, butcher services, and sales and
-            distribution, all while promoting sustainability and innovation in
-            agriculture."
+            Our vision is to continually elevate our standards and redefine
+            excellence in the supermarket industry. With a foundation built on
+            integrity, innovation, and customer-centric values, we aspire to be
+            the premier destination for discerning shoppers seeking unparalleled
+            quality, variety, and convenience.
           </p>
         </div>
       </div>

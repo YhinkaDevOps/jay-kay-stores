@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Contact = () => {
 
-  const [state, handleSubmit] = useForm("mrgnyavo");
+  const [state, handleSubmit] = useForm("mvoevzpv");
   if (state.succeeded) {
     return (
       <div className="products-bg service-header contact-form-bg font-bold flex flex-col gap-5 justify-center items-center min-h-[600px] md:min-h-screen">
@@ -77,21 +77,21 @@ const Contact = () => {
         <div className="contact-form border shadow-lg shadow-[rgb(4,12,22)] flex flex-col gap-2 p-7">
           <h3 className="text-[#000000] text-2xl font-semibold">Visit Us</h3>
           <div>
-            <p>Ikanna Oluwo Village</p>
-            <p>Ajura, Obafemi Owode LGA</p>
-            <p>Ogun State</p>
+            <p>Amuwo Odofin, L.G.A.,</p>
+            <p>Lagos State</p>
             <p>Nigeria</p>
           </div>
 
           <h3 className="text-[#000000]] text-2xl font-semibold">Phone Us</h3>
           <div>
             <p>Customer Service:</p>
-            <p>08023049030</p>
+            <p>07062406103</p>
+            <p>08086871400</p>
           </div>
 
           <h3 className="text-[#000000] text-2xl font-semibold">Email Us</h3>
           <div>
-            <p>atobafarmsltd@gmail.com</p>
+            <p>jaykaystores.supermarket@gmail.com</p>
           </div>
         </div>
       </div>

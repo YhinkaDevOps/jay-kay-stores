@@ -4,6 +4,17 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
+import {
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  Button,
+  MenuItemOption,
+  MenuGroup,
+  MenuOptionGroup,
+  MenuDivider,
+} from "@chakra-ui/react";
 
 const Navbar = () => {
   const [isClick, setisClick] = useState(false);
@@ -35,20 +46,41 @@ const Navbar = () => {
 
           <div className="hidden md:block">
             <ul className="nav-list flex gap-x-9 items-center text-base py-4">
-              <li className=" text-black font-medium text-sm hover:text-[#900C3F]">
+              <Button colorScheme="teal" variant="link">
                 <Link className="capitalize" href="/">
-                  HOME
+                  Home
                 </Link>
-              </li>
-              <li className="text-black font-medium text-sm hover:text-[#900C3F]">
-                <Link href="/about-us">ABOUT US</Link>
-              </li>
-              <li className="text-black font-medium text-sm hover:text-[#900C3F]">
-                <Link href="/products">OUR PRODUCTS</Link>
-              </li>
-              <li className="text-black font-medium text-sm hover:text-[#900C3F]">
-                <Link href="/contact-us">CONTACT US</Link>
-              </li>
+              </Button>
+              <Menu>
+                <MenuButton className="text-[#319795] font-semibold hover:underline hover:underline-offset-2 hover:border-b-[#319795]">
+                  Our Products
+                </MenuButton>
+                <MenuList>
+                  <Link href="/vegetables-and-fruits">
+                    {" "}
+                    <MenuItem>Fruits & Vegetables</MenuItem>
+                  </Link>
+                  <Link href="/meat-poultry">
+                    {" "}
+                    <MenuItem>Poultry & Meat</MenuItem>
+                  </Link>
+                  <Link href="/wine-and-liquor">
+                    {" "}
+                    <MenuItem>Wine & Liquor</MenuItem>
+                  </Link>
+                  <Link href="/groceries">
+                    {" "}
+                    <MenuItem>Groceries</MenuItem>
+                  </Link>
+                  <Link href="/baby-products">
+                    {" "}
+                    <MenuItem>Baby Products</MenuItem>
+                  </Link>
+                </MenuList>
+              </Menu>
+              <Button colorScheme="teal" variant="link">
+                <Link href="/contact-us">Contact Us</Link>
+              </Button>
             </ul>
           </div>
 
@@ -73,10 +105,33 @@ const Navbar = () => {
                   <Link href="/">HOME</Link>
                 </li>
                 <li className="text-white hover:bg-white font-medium hover:text-black rounded-lg p-2">
-                  <Link href="/about-us">ABOUT US</Link>
-                </li>
-                <li className="text-white hover:bg-white font-medium hover:text-black rounded-lg p-2">
-                  <Link href="/products">OUR PRODUCTS</Link>
+                  <Menu>
+                    <MenuButton className=" hover:text-black ">
+                      OUR PRODUCTS
+                    </MenuButton>
+                    <MenuList>
+                      <Link href="/vegetables-and-fruits">
+                        {" "}
+                        <MenuItem>Fruits & Vegetables</MenuItem>
+                      </Link>
+                      <Link href="/meat-poultry">
+                        {" "}
+                        <MenuItem>Poultry & Meat</MenuItem>
+                      </Link>
+                      <Link href="/wine-and-liquor">
+                        {" "}
+                        <MenuItem>Wine & Liquor</MenuItem>
+                      </Link>
+                      <Link href="/groceries">
+                        {" "}
+                        <MenuItem>Groceries</MenuItem>
+                      </Link>
+                      <Link href="/baby-products">
+                        {" "}
+                        <MenuItem>Baby Products</MenuItem>
+                      </Link>
+                    </MenuList>
+                  </Menu>
                 </li>
                 <li className="text-white hover:bg-white font-medium hover:text-black rounded-lg p-2">
                   <Link href="/contact-us">CONTACT US</Link>
